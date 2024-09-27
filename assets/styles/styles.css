@@ -1,26 +1,46 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-{
+*  {
+    margin: 4;
+    padding: 4;
 
-}
+  }
+  
+  
+
  body {
     background-color: #79C6D7;
-    font-family: ""
-    font-size: 
-    line-height:
-    font-weight: 
+    
+    font-family: "Julius Sans One" ;
+    font-size: 50;
+    line-height:;
+    font-weight:2;
+    text-align:inherit:center;
 }
+
+ div {
+   
+   font-family: "Nokora";
+   font-weight:normal ;
+   text-indent: 5em;
+ }
  h1 {
     font-family:"Nokora" ;
     font-size: 100;
     line-height: 130%;
+    letter-spacing: 3px;
+    color:#E5FAFF;
+    -webkit-text-stroke-color:#4B779B; 
+    -webkit-text-stroke-width: 2px;
     width: auto;
     padding-top: 1em;
     padding-bottom: 1em;
     margin-left: 10em;
  }
+ .stroke-behind {
+   paint-order: stroke fill;
+ }
  a:hover {
     color: azure;
+ }
+ h1 span {
+   color: #E5FAFF;
  }
