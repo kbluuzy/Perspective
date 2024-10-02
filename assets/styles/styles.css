@@ -47,7 +47,9 @@ padding-top: 1px;
    
     
  }
- 
+ #movies {
+   color: #79C6D7; font-size: large;
+ }
 
  
  h2 {
@@ -70,9 +72,6 @@ padding-top: 1px;
  }
  .stroke-outside {
    paint-order: stroke fill;
- }
- a:hover {
-    color: azure;
  }
  h1 span {
    color: #E5FAFF;
@@ -130,11 +129,14 @@ padding-top: 1px;
    text-transform: capitalize;
  }
 
+ 
+ 
 
  #perspective h2 {
    text-align: center;
    margin-left: auto;
  }
+
 
 #newsletter-subscribe {
    background-color: #4B779B;
