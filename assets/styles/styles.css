@@ -3,39 +3,68 @@
     padding: 4;
 
   }
-  
-  
-
+ 
  body {
     background-color: #79C6D7;
     
     font-family: "Julius Sans One" ;
-    font-size: 50;
-    line-height:;
-    font-weight:2;
-    text-align:inherit:center;
+    font-size: 24px;
+    line-height: 35px;
+    font-weight:2px;
+    align-content: center;
+}
+main {
+   padding: 10px 10%;
 }
 
+#link p {
+padding-top: 1px;
+}
  div {
    
    font-family: "Nokora";
-   font-weight:normal ;
-   text-indent: 5em;
+   font-weight:bold ;
+   font-size: 40px;
+
+   
  }
- h1 {
-    font-family:"Nokora" ;
-    font-size: 100;
-    line-height: 130%;
-    letter-spacing: 3px;
+
+
+ *#perspectives h1 {
+    font-family:"Nokora";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 13%;
     color:#E5FAFF;
     -webkit-text-stroke-color:#4B779B; 
-    -webkit-text-stroke-width: 2px;
-    width: auto;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-left: 10em;
+    -webkit-text-stroke-width: 1px;
+    text-align:center;
+    padding-top: 60px;
+    padding-left: 10px;
+   
+    
  }
- .stroke-behind {
+ 
+ h2 {
+
+ }
+ .content-box {
+   font-family: "Julius Sans One";
+   font-size: 15px;
+   line-height: 14px;
+ }
+ header .content-box{
+   font-family: "Nokora";
+ }
+ header {
+   font-family: "Nokora";
+   font-size: 40px;
+   position: absolute;
+   text-align: left;
+   line-height: 20%;
+ }
+ .stroke-outside {
    paint-order: stroke fill;
  }
  a:hover {
@@ -44,3 +73,64 @@
  h1 span {
    color: #E5FAFF;
  }
+
+ .film-flex {
+ display: flex;
+ padding: auto;
+ }
+ 
+ .content-box {
+   width: 700px;
+   height: 499px;
+   padding: 80px;
+   border: none;
+   background: rgba(255, 255, 255, 0.64);
+   border-radius: 68px ;
+   margin-left: 1%;
+ }
+  div.content-box {
+   text-align: left;
+ }
+ ol {
+   display: block;
+   list-style-type: decimal;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   padding-inline-start: 10px;
+   unicode-bidi: isolate;
+   line-height: 100px;
+   text-align: left;
+   font-size: 20px;
+
+}
+ #why h1 {
+   text-align: left;
+   font-family: "Nokora";
+   font-size: 20px;
+ }
+ #why p {
+   font-family: "Julius Sans One";
+   text-indent: 8em;
+   padding: 10px ;
+   text-align: center;
+ }
+ #perspective p {
+   font-family: "Nokora";
+   text-indent: 5em;
+   font-size: auto;
+   padding-left: 80px;
+   padding-right: 80px;
+ }
+ #perspective h2 {
+   text-align: center;
+   margin-left: auto;
+ }
+
+#newsletter-subscribe {
+   background-color: #4B779B;
+   padding: 10px;
+   width: 20%;
+   margin-left: 20%;
+}

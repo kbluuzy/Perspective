@@ -1,7 +1,13 @@
-span {display:inline-block}
+section span {
+  display:inline-block;
+  line-height: 20px;
+  letter-spacing: auto;
+  width: 110px;
+}
 
 .rotate90 {
    transform: rotate(90deg) ;
+   padding-inline: 5px;
 }
 .rotate-90 {
    transform: rotate(-90deg) ;
@@ -13,5 +19,5 @@ span {display:inline-block}
   transform: rotate(270deg) ;
 }
 span {
- letter-spacing: (3px) ;
+ letter-spacing: (auto) ;
 }
