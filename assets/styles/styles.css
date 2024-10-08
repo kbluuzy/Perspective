@@ -20,15 +20,43 @@ main {
 #link p {
 padding-top: 1px;
 }
- div {
+ #article-film {
+   display: flex;
+   unicode-bidi: isolate;
    
-   font-family: "Nokora";
-   font-weight:bold ;
-   font-size: 40px;
-
-   
+     
  }
-
+ #film-container {
+   display: flex;
+ }
+ #film-container img {
+   width: 100%;
+ }
+ #newsletter-subscribe button {
+   background-color: #79C6D7;
+ }
+#page-button a{
+   
+   border-radius: 1px;
+   color: #E5FAFF;
+   font-family: "Julius Sans One";
+   font-size: large;
+   
+}
+#page-button a:hover {
+   color: #333651;
+}
+#page-button :hover {
+   color: #79C6D7;
+   background-color: #E5FAFF;
+}
+#page-button button{
+   height: 80px;
+   border-radius: 60px;
+   background-color:#4B779B;
+   stroke-opacity: 10px;
+   
+}
 
  *#perspectives h1 {
     font-family:"Nokora";
@@ -43,7 +71,7 @@ padding-top: 1px;
     padding-top: 60px;
     padding-left: 10px;
     font-weight: 400;
-     ;
+    margin-left: auto;
    
     
  }
@@ -59,6 +87,10 @@ padding-top: 1px;
    font-family: "Julius Sans One";
    font-size: 15px;
    line-height: 14px;
+ }
+ .film-section {
+   width: 200px ;
+   height: 5000%;
  }
  header .content-box{
    font-family: "Nokora";
@@ -76,10 +108,13 @@ padding-top: 1px;
  h1 span {
    color: #E5FAFF;
  }
-
 #film {
-  float: right;
-  margin: 10px;
+   width: 500px;
+   
+}
+#film-container {
+   width: 50px;
+   margin: auto;
 }
  
  .content-box {
@@ -92,7 +127,7 @@ padding-top: 1px;
    margin-left: 1%;
  }
   div.content-box {
-   text-align: left;
+   text-align: right;
  }
  ol {
    display: block;
@@ -141,6 +176,8 @@ padding-top: 1px;
 #newsletter-subscribe {
    background-color: #4B779B;
    padding: 10px;
-   width: 20%;
+   width: 60%;
+   height: 50%;
    margin-left: 20%;
+   border-radius: 30px;
 }
