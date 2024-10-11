@@ -7,10 +7,6 @@ main {
    margin-left: 50px;
    margin-right: 3px;
 }
-#perspectives {
-  margin: auto;
-  margin-top: auto;
-}
 *#perspectives h1 {
   font-family:"Nokora";
   font-style: normal;
@@ -28,8 +24,6 @@ main {
 }
 h1 span {
   color: #E5FAFF;
-  padding-left: 65px;
-  text-align: left;
 }
 #perspective h2 {
   padding-top: 1px;
@@ -43,6 +37,8 @@ padding-left: 87px;
 padding-right: 5%;
 color: #333651;
 text-transform: capitalize;
+z-index: 99;
+position: relative;
 }
 
 body {
@@ -63,6 +59,8 @@ padding-top: 1px;
   float:right;
   width: 40%;
   margin: 5px 10%; 
+  position: relative;
+  top: -50px;
 }
  
  
