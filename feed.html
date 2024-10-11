@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nokora:wght@100;300;400;700;900&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="assets/styles/styles.css" > 
 </head>
-<body>
+<body id="third-page">
     <h1> Feed Homepage</h1>
     <p>
         <label for="name">Name</label> 
@@ -23,6 +23,48 @@
  <section>
   
  </section>   
+    <p>Show a file-select field which allows a file to be chosen for upload:</p>
+
+
+
+<form method="post" enctype="multipart/form-data">
+    <div>
+      <label for="profile_pic">Choose file to upload</label>
+      <input
+        type="file"
+        id="profile_pic"
+        name="profile_pic"
+        accept=".jpg, .jpeg, .png" />
     
+      <button
+ type="submit">Submit</button>
+    </div>
+  </form>
+
+  <div id="image-preview">
+    </div>
+    <script>
+        const form = document.querySelector("form");
+        const imagePreview = document.getElementById(image-preview);
+    
+        form.addEventListener(submit, async (event)>
+          event.preventDefault();
+    
+          const formData = new FormData(form);
+          const response = await fetch('upload.php',   
+     
+            method: "post",
+            body: formData>
+    
+          if (response.ok) {
+            const data = await response.json();
+            const imageUrl = data.imageUrl;
+    
+            imagePreview.innerHTML = <img src="${imageUrl}">
+          
+
+      </script>
+
+
 </body>
 </html>

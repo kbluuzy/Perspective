@@ -1,100 +1,72 @@
-*  {
-    margin: 4;
-    padding: 4;
-
-  }
+*  
  
- body {
-    background-color: #79C6D7;
-    
-    font-family: "Julius Sans One" ;
-    font-size: 24px;
-    line-height: 35px;
-    font-weight:2px;
-    align-content: center;
-}
+ 
+
 main {
-   padding: 10px 10%;
+   padding: 10px 1%;
+   margin-left: 50px;
+   margin-right: 3px;
 }
+#perspectives {
+  margin: auto;
+  margin-top: auto;
+}
+*#perspectives h1 {
+  font-family:"Nokora";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 140px;
+  line-height: 13%;
+  color:#E5FAFF;
+  margin-right: 7px;
+  -webkit-text-stroke-color:#333651; 
+  -webkit-text-stroke-width: 1.5px;
+  text-align: center;
+}
+.stroke-outside {
+  paint-order: stroke fill;
+}
+h1 span {
+  color: #E5FAFF;
+  padding-left: 65px;
+  text-align: left;
+}
+#perspective h2 {
+  padding-top: 1px;
+  text-align: center;
+  }
+#perspective p {
+font-family: "Nokora";
+text-indent: 5em;
+font-size: 32px;
+padding-left: 87px;
+padding-right: 5%;
+color: #333651;
+text-transform: capitalize;
+}
+
+body {
+  background-color: #79C6D7;
+  
+  font-family: "Julius Sans One" ;
+  font-size: 24px;
+  line-height: 35px;
+  font-weight:2px;
+}
+
 
 #link p {
 padding-top: 1px;
 }
- #article-film {
-   display: flex;
-   unicode-bidi: isolate;
-   
-     
- }
- #film-container {
-   display: flex;
- }
- #film-container img {
-   width: 100%;
- }
- #newsletter-subscribe button {
-   background-color: #79C6D7;
- }
-#page-button a{
-   
-   border-radius: 1px;
-   color: #E5FAFF;
-   font-family: "Julius Sans One";
-   font-size: large;
-   
-}
-#page-button a:hover {
-   color: #333651;
-}
-#page-button :hover {
-   color: #79C6D7;
-   background-color: #E5FAFF;
-}
-#page-button button{
-   height: 80px;
-   border-radius: 60px;
-   background-color:#4B779B;
-   stroke-opacity: 10px;
-   
-}
-
- *#perspectives h1 {
-    font-family:"Nokora";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 116px;
-    line-height: 13%;
-    color:#E5FAFF;
-    -webkit-text-stroke-color:#333651; 
-    -webkit-text-stroke-width: 1.5px;
-    text-align:center;
-    padding-top: 60px;
-    padding-left: 10px;
-    font-weight: 400;
-    margin-left: auto;
-   
-    
- }
- #movies {
-   color: #79C6D7; font-size: large;
- }
-
  
- h2 {
-
- }
- .content-box {
-   font-family: "Julius Sans One";
-   font-size: 15px;
-   line-height: 14px;
- }
- .film-section {
-   width: 200px ;
-   height: 5000%;
- }
- header .content-box{
-   font-family: "Nokora";
- }
+ #film {
+  float:right;
+  width: 40%;
+  margin: 5px 10%; 
+}
+ 
+ 
+ 
  header {
    font-family: "Nokora";
    font-size: 40px;
@@ -102,30 +74,31 @@ padding-top: 1px;
    text-align: left;
    line-height: 20%;
  }
- .stroke-outside {
-   paint-order: stroke fill;
- }
- h1 span {
-   color: #E5FAFF;
- }
-#film {
-   width: 500px;
-   
-}
-#film-container {
-   width: 50px;
-   margin: auto;
-}
  
+ :-webkit-any(h1) section {
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0em;
+  letter-spacing: normal;
+
+}
+
+
  .content-box {
-   width: 460px;
+   width: 500px;
    height: 358px;
    padding: 80px;
    border: none;
    background: rgba(255, 255, 255, 0.64);
    border-radius: 68px ;
-   margin-left: 1%;
+   margin-left: 5%;
  }
+ .content-box {
+  font-family: "Julius Sans One";
+  font-size: 15px;
+  line-height: 7px;
+  
+}
   div.content-box {
    text-align: right;
  }
@@ -136,12 +109,18 @@ padding-top: 1px;
    margin-block-end: 1em;
    margin-inline-start: 0px;
    margin-inline-end: 0px;
-   padding-inline-start: 10px;
+   padding-inline-start: 1px;
    unicode-bidi: isolate;
-   line-height: 100px;
+   line-height: 55px;
    text-align: left;
-   font-size: 20px;
+   font-size: 24px;
+   stroke-width: 10px;
 
+}
+
+#why {
+  padding: 10px 5%;
+  text-align: left;
 }
  #why h1 {
    text-align: left;
@@ -150,28 +129,9 @@ padding-top: 1px;
  }
  #why p {
    font-family: "Julius Sans One";
-   text-indent: 8em;
-   padding: 10px ;
-   text-align: center;
+   text-indent: 4em;
+   margin-right: 2px ;
  }
- #perspective p {
-   font-family: "Nokora";
-   text-indent: 5em;
-   font-size: auto;
-   padding-left: 87px;
-   padding-right: 87px;
-   color: #333651;
-   text-transform: capitalize;
- }
-
- 
- 
-
- #perspective h2 {
-   text-align: center;
-   margin-left: auto;
- }
-
 
 #newsletter-subscribe {
    background-color: #4B779B;
@@ -181,3 +141,35 @@ padding-top: 1px;
    margin-left: 20%;
    border-radius: 30px;
 }
+#newsletter-subscribe button {
+  background-color: #79C6D7;
+}
+#page-button a{
+  
+  border-radius: 1px;
+  color: #E5FAFF;
+  font-family: "Julius Sans One";
+  font-size: large; 
+}
+#page-button a:hover {
+  color: #333651;
+}
+#page-button :hover {
+  color: #79C6D7;
+  background-color: #E5FAFF;
+}
+#page-button button{
+  height: 80px;
+  border-radius: 60px;
+  background-color:#4B779B;
+  stroke-opacity: 10px;
+  
+}
+
+#movies {
+  color: #79C6D7; font-size: large;
+}
+
+
+
+

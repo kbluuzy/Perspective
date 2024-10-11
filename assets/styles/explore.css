@@ -1,0 +1,45 @@
+*
+#explore style {
+    padding: 10px ;
+    padding-top: 10px;
+    margin-left: 50px;
+    margin-right: 3px;
+ background-image: linear-gradient(180deg, #4B779B, #333651) no-repeat;
+ background-repeat: no-repeat;
+}
+#second-page {
+    margin: 10px 10%;
+    background: linear-gradient( #4B779B, #333651) no-repeat;
+    height: 1900px ;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    width: 50%;
+
+}
+.feature-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#article {
+    width: 90%;
+    
+}
+
+ #image-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  #third-page #image-preview img {
+    max-width: 100%;
+    max-height: 100%;
+  }
