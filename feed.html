@@ -43,28 +43,7 @@
 
   <div id="image-preview">
     </div>
-    <script>
-        const form = document.querySelector("form");
-        const imagePreview = document.getElementById(image-preview);
     
-        form.addEventListener(submit, async (event)>
-          event.preventDefault();
-    
-          const formData = new FormData(form);
-          const response = await fetch('upload.php',   
-     
-            method: "post",
-            body: formData>
-    
-          if (response.ok) {
-            const data = await response.json();
-            const imageUrl = data.imageUrl;
-    
-            imagePreview.innerHTML = <img src="${imageUrl}">
-          
-
-      </script>
-
 
 </body>
 </html>

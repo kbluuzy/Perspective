@@ -16,17 +16,42 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    justify-content: center;
     width: 50%;
-
+    height: 300px;
+    border-width: 5px ;
+    border-radius: 5px;
 }
+
+ #explore h1  {
+    text-align: center;   
+}
+
 .feature-flex {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    column-gap: 50px;
 }
+
+body
+{
+  font-family: Open sans, Helvetica;
+  background: #111;
+  color: white;
+  font-size: 16px;
+}
+
+h1
+{
+  font-weight: lighter;
+}
+
+
+
+
 #article {
-    width: 90%;
+    width: 100px;
+    height: 200px;
     
 }
 

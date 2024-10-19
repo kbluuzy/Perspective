@@ -11,13 +11,15 @@ main {
   font-family:"Nokora";
   font-style: normal;
   font-weight: 500;
-  font-size: 140px;
+  font-size: 8vw;
   line-height: 13%;
   color:#E5FAFF;
   margin-right: 7px;
   -webkit-text-stroke-color:#333651; 
   -webkit-text-stroke-width: 1.5px;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 .stroke-outside {
   paint-order: stroke fill;
@@ -168,6 +170,8 @@ padding-top: 1px;
   color: #79C6D7; font-size: large;
 }
 
-
+#tv-shows {
+  
+}
 
 
