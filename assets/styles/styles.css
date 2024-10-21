@@ -1,7 +1,4 @@
 *  
- 
- 
-
 main {
    padding: 10px 1%;
    margin-left: 50px;
@@ -20,7 +17,7 @@ main {
   text-align: center;
   display: flex;
   justify-content: space-around;
-}
+} 
 .stroke-outside {
   paint-order: stroke fill;
 }
@@ -42,7 +39,6 @@ text-transform: capitalize;
 z-index: 99;
 position: relative;
 }
-
 body {
   background-color: #79C6D7;
   
@@ -51,8 +47,6 @@ body {
   line-height: 35px;
   font-weight:2px;
 }
-
-
 #link p {
 padding-top: 1px;
 }
@@ -64,15 +58,11 @@ padding-top: 1px;
   position: relative;
   top: -50px;
 }
- 
- 
- 
  header {
    font-family: "Nokora";
    font-size: 40px;
-   position: absolute;
-   text-align: left;
-   line-height: 20%;
+   line-height: 1px;
+
  }
  
  :-webkit-any(h1) section {
@@ -82,11 +72,9 @@ padding-top: 1px;
   letter-spacing: normal;
 
 }
-
-
  .content-box {
    width: 500px;
-   height: 358px;
+   height: 430px;
    padding: 80px;
    border: none;
    background: rgba(255, 255, 255, 0.64);
@@ -165,13 +153,13 @@ padding-top: 1px;
   stroke-opacity: 10px;
   
 }
-
-#movies {
-  color: #79C6D7; font-size: large;
+label[for="text"] {
+  text-align: center;
+  font-size: small;
 }
 
 #tv-shows {
-  
+
 }
 
 
