@@ -9,9 +9,9 @@
 #article h1 {
     text-align: center;
     margin-left: 50px;
-    padding-right: 400px;
     
 }
+
 
 #article {
     border: 2px solid #ffffff; /* Adjust the border style, width, and color as needed */;
@@ -46,7 +46,6 @@
     background-color: #ffffff;
     letter-spacing: 10px;
     align-content: center;
-    grid-row: unset;
    
   }
  
@@ -60,8 +59,10 @@
     font-weight: 770;
     padding-left: 50px;
     padding-right: 50px;
+    text-align: left;
     text-shadow:2px 5px 7px black;
 }
+
   
 label {
     display: block;
@@ -77,15 +78,10 @@ textarea .article-box {
     resize: none;
   }
 input[type="textarea"]{
-  height: 400px;
-}
-
-input[type="submit"] {
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
+  height: 145px;
+  width: 800px;
+  top: -20px;
+  
 }
 
 input[type="submit-text"] {
@@ -94,6 +90,19 @@ input[type="submit-text"] {
   color: white;
   border: none;
   cursor: pointer;
+  
+}
+.add input[type="textarea"]{
+  border: 1px solid black;
+  border-width: 5px;
+  box-shadow:2px 5px 7px black;
+}
+input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .article-box {
@@ -128,10 +137,6 @@ h1
   height: 100px;
 }
 
-.add textarea{
-  height: 100px;
-  width: 100px;
-}
 
 textarea {
 
