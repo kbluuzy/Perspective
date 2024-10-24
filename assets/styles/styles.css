@@ -153,7 +153,7 @@ padding-top: 1px;
   stroke-opacity: 10px;
   
 }
-label[for="text"] {
+label[for="textarea"] {
   text-align: center;
   font-size: small;
 }
