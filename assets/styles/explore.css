@@ -14,17 +14,22 @@
 
 
 #article{
-    border: 2px solid #ffffff; /* Adjust the border style, width, and color as needed */;
-    display: grid;
+     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 1fr 2fr 8fr;
     grid-gap: 20px; /* Adjust the gap as needed */
+    height: 40%;
+    justify-content: space-around;
+    
+  }
+  section .article-box img {
+    align-items: center;
+    
   }
   
 #article img {
     width: 50%;
-    height: 200px; /* Adjust the height as needed */
-    object-fit:fill;
+    height: auto 200px; 
     border: none;
     padding-left: 10px;
   }
@@ -32,7 +37,9 @@
 .article-box label {
     font-size: 20px;
   }
-
+section .subhead {
+  border: 3px solid white;
+}
 #article header {
     grid-column: span 3;
     font-weight: 100;
@@ -48,15 +55,21 @@
     align-content: center;
    
   }
-.subheader-1, .subheader-2, .subheader-3,
-.add { 
+.add, .subheader-1, .subheader-2, .subheader-3, .subheader-4 { 
   grid-column: span 3; /* Make the header and subheaders span across all columns */
-  border: 1px solid #000; /* Add a border around the spanning elements */
-}
-.add {
+   /* Add a border around the spanning elements */
   display: flex; /* Allow the content to wrap to the next line if needed */
   align-items:normal; /* Center the content vertically */
+  
 }
+section .mlists {
+  grid-column: span 3;
+  display: flex;
+  align-items: normal;
+  overflow: scroll;
+  
+}
+  
 
  
 :-webkit-any(.subheader-1, .subheader-2, .subheader-3, .subheader-4) {
@@ -72,6 +85,8 @@
     text-align: left;
     text-shadow:2px 5px 7px black;
 }
+
+
 
   
 label {
@@ -117,13 +132,14 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-.article-box {
-    border: 1px solid #ccc;
+*.article-box {
+    border: 2px solid white;
     padding: 20px;
-    height: 90%;
+    height: auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 1fr 2fr 8fr;
-
+    display: -ms-inline-grid;
+    flex-wrap:wrap;
   } 
 
 body
@@ -132,6 +148,7 @@ body
   background: #111;
   color: white;
   font-size: 16px;
+
 }
 
 h1
@@ -163,3 +180,6 @@ svg {
   cursor: pointer;
   height: 10px;
 }
+
+
+
