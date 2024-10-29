@@ -1,24 +1,35 @@
 *  
-main {
-   padding: 5%;
-   margin-left: 50px;
-   margin-right: 23px;
-   border: 2px solid white;
-}
+
 *#perspectives h1 {
   font-family:"Nokora";
   font-style: normal;
   font-weight: 500;
   font-size: 8vw;
-  line-height: 13%;
   color:#E5FAFF;
-  margin-right: 7px;
+  background-color: #E5FAFF;
+  height: 300px;
+  align-items: center;
   -webkit-text-stroke-color:#333651; 
   -webkit-text-stroke-width: 1.5px;
   text-align: center;
   display: flex;
   justify-content: space-around;
 } 
+#first-page .topnav {
+  align-content: center;
+  justify-content: center;
+}
+article #logo {
+  border: 2px solid green;
+  width: 300px;
+  display: inline-flex;
+}
+h1 {
+  margin-top: 0px;
+}
+h2 {
+
+}
 .stroke-outside {
   paint-order: stroke fill;
 }
@@ -30,15 +41,20 @@ h1 span {
   text-align: center;
   }
 #perspective p {
-font-family: "Nokora";
 text-indent: 5em;
 font-size: 32px;
 padding-left: 87px;
 padding-right: 5%;
-color: #333651;
-text-transform: capitalize;
 z-index: 99;
-position: relative;
+position:relative;
+font-weight: 100;
+stroke:  #79c6d7;
+color: #79c6d7;
+text-align: center;
+font-family: Julius Sans One;
+font-style: normal;
+background-color: #ffffff;
+letter-spacing: 10px;
 }
 body {
   background-color: #79C6D7;
@@ -58,6 +74,13 @@ padding-top: 1px;
   margin: 5px 10%; 
   position: relative;
   top: -50px;
+
+}
+#perspective.idea {
+  background-color: white;
+  border: 3px solid white;
+  border-radius: 50px;
+  
 }
  #content-box header {
    font-family: "Nokora";
@@ -66,6 +89,10 @@ padding-top: 1px;
       line-height: 1px;
    font-size: 29px;
    position: relative;
+ }
+ #first-page {
+  margin: 10px 10%;
+     height:max-content;
  }
  
  :-webkit-any(h1) section {
