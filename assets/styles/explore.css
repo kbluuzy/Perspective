@@ -5,9 +5,15 @@ main {
   margin-right: 23px;
   border: 2px solid white;
 }
-#first-page , #second-page, .topnav {
-  overflow: hidden;
+
+.topnav {
+  
   background-color: #e9e9e9;
+
+}
+div.article-logo{
+  width: 600px;
+  background-color: none;
 }
 
 .topnav a {
@@ -31,10 +37,10 @@ main {
 }
 
 .topnav input[type=text] {
-  float: right;
+  
   padding: 6px;
   margin-top: 8px;
-  margin-right: 16px;
+  margin-right: 6px;
   border: none;
   font-size: 17px;
 }
@@ -48,7 +54,7 @@ main {
     margin: 0;
     padding: 14px;
   }
-  
+ 
   .topnav input[type=text] {
     border: 1px solid #ccc;  
   }
@@ -140,11 +146,14 @@ section .mlists {
 }
 
 
-
+img#logo {
+  height: 7vw;
+}
   
 label {
-    display: block;
+    display: flex;
     margin-bottom: 5px;
+    justify-content: space-around;
   }
 
 textarea .article-box {
@@ -184,6 +193,12 @@ input[type="submit"] {
     border: none;
     cursor: pointer;
 }
+input[type="search" i]{
+  border:2px solid #111;
+  max-width: fit-content;
+  
+}
+    
 
 *.article-box {
     border: 2px solid white;
