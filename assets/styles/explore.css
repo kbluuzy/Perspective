@@ -1,48 +1,36 @@
 *
-main {
-  padding: 5%;
-  margin-left: 50px;
-  margin-right: 23px;
-  border: 2px solid white;
+#second-page {
+  margin: 8px 15%;
+}
+.topnav{
+  margin: -8px -21.4%;
 }
 div.article-logo {
-  
-  margin-left: -10vw;
   margin-top:-.4vw;
-    padding-left: -7vw;
-    display: flex;
-    height: 4.5vw;
-    background-color:#1c2786;
-    align-items: center;
-    
-    justify-content: space-around;
-  }
-  img {
-    overflow: clip;
+  display:block ;
+  background-color:#1c2786;
   }
   img#logo {
-    height: 7vw;
-    display: flex;
-    margin-top: 2vw ;
+    height: 3vw;
+    display: inline;
+    margin-top: 1vw ;
+    align-items: center;
+
   }
-    
-.topnav {
-  
+  div.article-tex {
+    display: inline;
+    text-align: center;
+  }
 
-}
-div.article-logo{
-  margin-top: -.5vw;
-  width: 101.3vw;
-  background-color: none;
-
-}
 
 .topnav a {
-  float: left;
-  color: black;
+  color: #8aa5c5;
   text-align: center;
   text-decoration: none;
   font-size: 17px;
+  display:inline-block;
+  width: 8%;
+  align-items: right;
 }
 
 .topnav a:hover {
@@ -55,37 +43,16 @@ div.article-logo{
   color: white;
 }
 
-.topnav input[type=text] {
-  
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 6px;
-  border: none;
-  font-size: 17px;
-}
 
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav input[type=text] {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
+
  
   .topnav input[type=text] {
     border: 1px solid #ccc;  
   }
-}
-#second-page {
-    margin: 10px 10%;
-     height:max-content;
+
      
-}
-#second-page, .topnav{
-  margin: 5px 4%;
-}
+
+
 #article h1 {
     text-align: center;
     margin-left: 50px;
@@ -95,6 +62,7 @@ div.article-logo{
 
 #article{
      display: grid;
+     margin: 5px 5px -1%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 1fr 2fr 8fr;
     grid-gap: 20px; /* Adjust the gap as needed */
@@ -184,7 +152,8 @@ input[type="textarea"]{
   width: 800px;
   align-content: center;
   position: relative;
-}
+
+ }
 
 input[type="submit-text"] {
   padding: 5px 10px;
@@ -192,7 +161,6 @@ input[type="submit-text"] {
   color: white;
   border: none;
   cursor: pointer;
-  position: relative;
   
 }
 .add input[type="textarea"]{
