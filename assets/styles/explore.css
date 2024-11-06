@@ -14,8 +14,8 @@ div.article-logo {
     height: 3vw;
     display: inline;
     margin-top: 1vw ;
+    margin-left: 50px;
     align-items: center;
-
   }
   div.article-tex {
     display: inline;
@@ -23,6 +23,10 @@ div.article-logo {
   }
 
 
+  a:-webkit-any-link {
+    vertical-align: 25px;
+display: inline-flex;
+}
 .topnav a {
   color: #8aa5c5;
   
