@@ -15,6 +15,17 @@
   display: flex;
   justify-content: space-around;
 } 
+div{
+  display: block;
+  unicode-bidi: isolate;
+}
+nav {
+  display: block;
+  unicode-bidi: isolate;
+}
+header nav.topnav a{
+  gap: 50px;
+}
 .topnav{
 margin: -10px -12.5%;
 }
@@ -32,18 +43,22 @@ div.article-logo {
 
   }
   div.article-tex {
-    display: inline;
+    display: flex;
     text-align: center;
   }
 
-
+  a:-webkit-any-link {
+    vertical-align: 25px;
+display: inline-flex;
+}
 .topnav a {
   color: #8aa5c5;
-  text-align:justify;
+  
   font-size: 17px;
-  margin: 10px -1%;
-  display:inline-block;
-  width: 8%;
+  width: 14%;
+  line-height: 20px;
+  bottom: 30px;
+  padding-left: 20px;
 }
 
 .topnav a:hover {
