@@ -15,8 +15,6 @@
   display: flex;
   justify-content: space-around;
 } 
-form {
-}
 form,.button1, .button2 {
   display: inline-flex;
 }
@@ -95,31 +93,23 @@ h1 {
 
 }
 #perspective h2 {
-  color: #000;
+  color: #79c6d7;
   background-color: #E5FAFF;
   height: 120px;
   margin-top: -10%;
+  height: 4vw;
 }
-h2{
-  margin-top: -6%;
-  font-size: 40px;
-    font-family: Nokora;
-    font-style: normal;
-    color: #ffffff;
-    -webkit-text-stroke: 2px #0876b2;
-    font-weight: 770;
-    padding-left: 50px;
-    padding-right: 50px;
-}
+
 .stroke-outside {
   paint-order: stroke fill;
 }
 
 h1 span {
   color: #E5FAFF;
+
 }
 #perspective h2 {
-  padding-top: 1px;
+  padding-top: 2vw;
   text-align: center;
   }
 #perspective p {
@@ -136,6 +126,12 @@ font-family: Julius Sans One;
 font-style: normal;
 letter-spacing: 10px;
 }
+.topnav label {
+  font-size: 16px;
+}
+.topnav h1 {
+  font-size: 16px;
+}
 body {
   background-color: #79C6D7;
   
@@ -150,10 +146,12 @@ padding-top: 1px;
  
  #film {
   float:right;
-  width: 40%;
-  margin: 5px 10%; 
+  width: 44%;
+  margin: 5px 8vw; 
   position: relative;
   top: -50px;
+  right: -100px;
+  
 
 }
 #perspective.idea {
@@ -162,13 +160,11 @@ padding-top: 1px;
   border-radius: 50px;
   
 }
- #content-box header {
+  header {
    font-family: "Nokora";
    display: flex;
-   justify-content: space-around;
-      line-height: 1px;
+   justify-content: center;
    font-size: 29px;
-   position: relative;
  }
  #first-page {
   margin: 10px 15%;
@@ -182,18 +178,17 @@ padding-top: 1px;
   letter-spacing: normal;
 }
  .content-box {
-   width: 500px;
-   height: 430px;
-   padding: 80px;
+   width: 45%;
+   height: 40vw;
    border: none;
    background: rgba(255, 255, 255, 0.64);
-   border-radius: 68px ;
-   margin-left: 5%;
+   border-radius: 68px;
+   margin-left: 3vw;
  }
- .content-box {
+ .content-box ol {
   font-family: "Julius Sans One";
   font-size: 15px;
-  line-height: 7px;
+  padding-left: 3vw;
 }
 section #perspective #why .content-box .text .idea{
   border: 2px white;
@@ -202,7 +197,9 @@ section #perspective #why .content-box .text .idea{
   div.content-box {
    text-align: right;
  }
-
+li {
+  display: list-item;
+}
  ol {
    display: block;
    list-style-type: decimal;
@@ -270,6 +267,72 @@ label[for="textarea"] {
   text-align: center;
   font-size: small;
 }
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: none;
+  color: white;
+  padding: auto;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+form.form-container {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  bottom: 0;
+  right: 15px;
+}
 
+/* Add styles to the form container */
+.form-container {
+  max-width: 100px;
+}
 
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100px;
+  padding: 6px 22px;
+  border: none;
+  background: #f1f1f1;
+  align-items: baseline;
+}
 
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 6px 22px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+div#myForm.form-popup {
+  display: inline-block;
+}

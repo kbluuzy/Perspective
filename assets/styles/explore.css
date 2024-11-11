@@ -120,9 +120,39 @@ section .mlists {
   overflow: scroll;
   
 }
-  
+  .article-box .star-rating {
+    unicode-bidi: isolate;
+  }
 
- 
+.star-rating {
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  width:5em;
+  scale: 2;
+  margin-top: 15px;
+}
+
+.star-rating input {
+  display:none;
+}
+
+.star-rating label {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.star-rating :checked ~ label {
+  color:#f90;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label 
+{
+  color:#fc0;
+}
+
+
 :-webkit-any(.subheader-1, .subheader-2, .subheader-3, .subheader-4) {
     grid-column: span 3; /* Place the subheader in the first column */
     font-size: 40px;
@@ -224,6 +254,11 @@ textarea {
 
 svg {
   padding-top: 8px;
+  
+}
+svg.star.hover{
+  fill: gold;
+
 }
  
 #subheader-1 #add input[type="submit"]{
