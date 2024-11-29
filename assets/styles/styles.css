@@ -156,6 +156,23 @@ padding-top: 1px;
     color: #79c6d7;
    
 }
+h1 #content-box {
+  font-weight: 100;
+    stroke:  #79c6d7;
+    color: #79c6d7;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Julius Sans One;
+    font-size: 2vw;
+    font-style: normal;
+    height: 70px;
+    background-color: #ffffff;
+}
+h1 b {
+  color: #E5FAFF;
+}
 label {
   font-weight: 100;
     stroke:  #79c6d7;
