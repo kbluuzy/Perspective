@@ -4,160 +4,76 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nokora:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles/styles.css" > 
   <link rel="stylesheet" href="assets/styles/transform.css">
   <link rel="stylesheet" href="assets/images/clip_art_film 1 (3).png">
-  <style>
-    body {font-family: Arial, Helvetica, sans-serif;}
-    * {box-sizing: border-box;}
-    
-    /* Button used to open the contact form - fixed at the bottom of the page */
-    .open-button {
-      background-color: #555;
-      color: white;
-      padding: 16px 20px;
-      border: none;
-      cursor: pointer;
-      opacity: 0.8;
-      position: fixed;
-      bottom: 23px;
-      right: 28px;
-      width: 280px;
-    }
-    
-    /* The popup form - hidden by default */
-    .form-popup {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      right: 15px;
-      border: 3px solid #f1f1f1;
-      z-index: 9;
-    }
-    
-    /* Add styles to the form container */
-    .form-container {
-      max-width: 300px;
-      padding: 10px;
-      background-color: white;
-    }
-    
-    /* Full-width input fields */
-    .form-container input[type=text], .form-container input[type=password] {
-      width: 100%;
-      padding: 15px;
-      margin: 5px 0 22px 0;
-      border: none;
-      background: #f1f1f1;
-    }
-    
-    /* When the inputs get focus, do something */
-    .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-      background-color: #ddd;
-      outline: none;
-    }
-    
-    /* Set a style for the submit/login button */
-    .form-container .btn {
-      background-color: #04AA6D;
-      color: white;
-      padding: 16px 20px;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-      margin-bottom:10px;
-      opacity: 0.8;
-    }
-    
-    /* Add a red background color to the cancel button */
-    .form-container .cancel {
-      background-color: red;
-    }
-    
-    /* Add some hover effects to buttons */
-    .form-container .btn:hover, .open-button:hover {
-      opacity: 1;
-    }
-    </style>
-    </head>
-    <body>
-      <button class="open-button" onclick="openform()">
-        <a href="#about">Create Account</a>
-       </button>
-       <div class="form-popup" id="myForm">
-         <form action="/action_page.php" 
-         class="form-container">
-         <h1>Login</h1>
-       <label for="email"><b>Email
-         </b> </label>
-           <input type="text" placeholder="Enter Email" name="email" required>
-       <label for="psw"><b>Password
-         </b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-       <button type="submit" class="btn">Login</button>
-       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-     </form>
-    </div>
-       <script>
-         function openForm() {
-           document.getElementById("myForm").style.display = "block"; 
-         }
-         
-         function closeForm() {
-           document.getElementById("myForm").style.display = "none";
-         }
-         </script>
-     <section>
-     <article> 
-      <nav>
-         <div class="topnav">
-                 
-           <div class="article-logo">
+  <link rel="stylesheet" href="assets/styles/styles.css">
+   <script src="assets/js/script.js"></script>
+    </head>        
+    <body id="first-page">
+      <header>
+        <nav id="desktop-nav">        
+          <menu>
+          <div class="article-logo">
                      
-          <img id="logo" src="assets/images/logo.png" alt="logo">
-          <a href="index.html">Go to Perspectives Homepage</a>
-                        <a href="#about">Create Account</a>
-                        <a href="#contact">Contact</a>
-                        <a href="Find.new.html">Explore</a>
-                        <a href="members.html">Members</a>
-                      
-                       </div></section>
-               </nav>
-               </header>               
-        <body id="first-page">
+            <img id="logo" src="assets/images/logo.png" alt="logo">
+          
+          <li>
+            <a href="index.html">Go to Perspectives Homepage</a>
+          </li>
+         
+          <li>
+            <a href="#" onclick="openForm()">Create Account</a>
+            
+            <div class="form-popup" id="myForm">
+              <form action="" class="form-container">
+                
+                <h1>Create Account</h1>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="psw">Password:
+                </label>
+                <input type="password" id="password" name="psw" required>
+                
+                <button type="submit" id="create">Create Account</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              
+              
+                <h1>Login</h1>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="psw">Password:
+                </label>
+                <input type="password" id="password" name="psw" required> 
+              
+                <button type="submit" class="btn cancel" id="login" onclick="closeForm()">Login</button>
+                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              </form>
+               
+           </div>
+          </li>
 
+
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a href="Find.new.html">Explore</a>
+          </li>
+          <li>
+            <a href="members.html">Members</a>
+          </li>
+      </menu>
+      </nav>
+    </header>    
+          
+                      
+          </div>
+                           
 <br>
 <a href="feed.html">Go to Feed Page</a>
 <a href="#tv-shows">Tv Shows</a>
 <a href="#movies">Go To Movies</a>
-
-</nav>
-<section> 
-<div> <section>
-  <article> 
-<button class="button button1">
-  <a href="feed.html">Go to Feed Page</a></button>
-<button class="button button1">
-  <a href="#tv-shows">Tv Shows</a></button>
-<button class="button button2">
-  <a href="#movies">Go To Movies</a></button>
-
-<form id="film_select">
-<h1> genres </h1>
-<select name="genres">
-<option  value="Honda">Honda</option>
-<option  value="Hyundai">Hyundai</option>
-<option  value="Jaguar">Jaguar</option>
-<option  value="Jeep">Jeep</option>
-<option  value="Kia">Kia</option>
-<option  value="Honda">Honda</option>
-<option  value="Hyundai">Hyundai</option>
-<option  value="Jaguar">Jaguar</option>
-<option  value="Jeep">Jeep</option>
-<option  value="Kia">Kia</option>
-</select> 
-<input type="submit" />   
-</form> </section>
+<div>
    
   <main>
     <section class="rotate" id="perspectives">
@@ -187,24 +103,25 @@
         E 
       
   ></section>
-    
-      <label for="perspective"> Quest For The Perfect Movie:</label>
-      <section class="idea" id= "perspective">
-      <p>
+
+      <label for="perspective"> Quest For The Perfect Movie:</label>     
+  <section class="idea" id= "perspective">
+     <p>
         in only three pages, you will find a glimpse in what could be-
          the most efficient site to find new movies- with no hassle , and
           no time wasted. If you’ve been let down one too many times in the past,
            with either trusting reviews that lead you to no good result, or just entirely 
            giving up after an hour of looking, this website would be created for you! 
-    </p>
+     </p>
   
   <article>
     <h1> </h1>
      <p> </p>
      <img id="film" src="assets/images/clip_art_film 1 (3).png" alt="film">
 </article>
-    <section class="content-box" >
-      <h1 id=".content-box" for="content-box">Table of Contents</h1>
+   
+<section class="content-box" id="content-box" >
+      <label for="content-box">Table of Contents</label>
       <ol>
         <li>Why PERSPECTIVE? </li>
         <li>Creating Your Movie List and profile </li>
@@ -237,38 +154,24 @@
       </p>
     </section></section>
       <br>
+      
          <h1> 
           <b>Create Your Own Saved List</b>
          </h1>
+
      <section id="newsletter-subscribe">
         <h2>Subcribe to Out Newsletter</h2>
         <label for="newsletter">Enter your Email</label>
         <input id="newsletter" type="email" placeholder="example@email.com">
         <button>Subsribe</button>
     </section>  
-      <p> 
+     
+    <p> 
      <footer> Perspective is meant to <b> save time </b> in finding movies
-      <a href="Perspective.html">view movies here</a></footer>
    </p>
-      <ol>
-        <li class="Pages"><a href="#"> Page 2</a></li>
-        <li class="Pages"><a href="#"> Page 3</a></li>
-      </ol>
-    </nav>
-    <section>
-      <p id="page-button" class="page-button">
-        <button> <a href="https://google.com">view google here</a> </button>
-        <button>  <a href="Find.new.html">Explore new films here</a> </button>
-      </p></section>
-    <a class="movies" href="Find.new.html#movies"
-    type="button">movies</button>
-    </button>
-    <a class="tv-shows" href="Find.new.html#tv-shows"
-    type="button">tv shows<button></button></a>
- <button class="Page 2" 
- type="button">Page 2</button>
- <input type="search"> 
-</nav>  
-    
-</body>
+     
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</main>
+  </body>
 </html>
