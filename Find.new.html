@@ -4,82 +4,93 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Finding New Films</title>
+      <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nokora:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-         <link rel="stylesheet" href="assets/styles/explore.css" > 
-         <body  style="background: linear-gradient( #79c6d7 , #4B779B, #3f5676,  #333651, #22253b,  #333651)">
-            <section>
-                <article> 
-              <button class="button button1">
-                <a href="feed.html">Go to Feed Page</a></button>
-              <button class="button button1">
-                <a href="#tv-shows">Tv Shows</a></button>
-              <button class="button button2">
-                <a href="#movies">Go To Movies</a></button>
-              
-              <form id="film_select">
-              <h1> genres </h1>
-              <select name="genres">
-              <option  value="Honda">Honda</option>
-              <option  value="Hyundai">Hyundai</option>
-              <option  value="Jaguar">Jaguar</option>
-              <option  value="Jeep">Jeep</option>
-              <option  value="Kia">Kia</option>
-              <option  value="Honda">Honda</option>
-              <option  value="Hyundai">Hyundai</option>
-              <option  value="Jaguar">Jaguar</option>
-              <option  value="Jeep">Jeep</option>
-              <option  value="Kia">Kia</option>
-              </select> 
-              <input type="submit" />   
-              </form> </section>
-               <header>
+    <link rel="stylesheet" href="assets/styles/explore.css" > 
+         <script src="assets/js/script.js"></script>
+      </head> 
+            
+               
+              <body id="second-page" style="background: linear-gradient( #79c6d7 , #4B779B, #3f5676,  #333651, #22253b,  #333651)">   
+
+        <header>
              <section>
              <article> 
-              <nav>
+         <nav id="desktop-nav">
                  <div class="topnav">
                          
                    <div class="article-logo">
                              
                   <img id="logo" src="assets/images/logo.png" alt="logo">
-                  <a href="index.html">Go to Perspectives Homepage</a>
-                                <a href="#about">Create Account</a>
-                                <a href="#contact">Contact</a>
-                                <a href="Find.new.html">Explore</a>
-                                <a href="members.html">Members</a>
-                              
-                               </div></section>
-                       </nav>
-                       </header>               
-                <body id="second-page">
+          <a href="index.html">Home</a>
+          <a href="#" onclick="openForm()">Create Account</a>
+                     <div class="form-popup" id="myForm">
+                      <form action="" class="form-container">
+                      
+                      <h1>Create Account</h1>
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required>
+                      <label for="psw">Password:
+                      </label>
+                      <input type="password" id="password" name="psw" required>
+                      
+                      <button type="submit" id="create">Create Account</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    
+                    
+                      <h1>Login</h1>
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required>
+                      <label for="psw">Password:
+                      </label>
+                      <input type="password" id="password" name="psw" required> 
+                    
+                      <button type="submit" class="btn cancel" id="login" onclick="closeForm()">Login</button>
+                       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                      </form>                    
+                     </div>
+          <a href="#contact">Contact</a>
+          <a href="Find.new.html">Explore</a>
+          <a href="feed.html">The Feed</a>                              
+              </section>
+         </nav>
+        </header>               
         
+               </div>
         <br>
-        <a href="feed.html">Go to Feed Page</a>
         <a href="#tv-shows">Tv Shows</a>
         <a href="#movies">Go To Movies</a>
         
-    </nav>
     <section> 
     <div> 
-        
-        <form id="film_select">
-        <h1> genres </h1>
-        <select name="genres">
-            <option  value="Honda">Honda</option>
-            <option  value="Hyundai">Hyundai</option>
-            <option  value="Jaguar">Jaguar</option>
-            <option  value="Jeep">Jeep</option>
-            <option  value="Kia">Kia</option>
-            <option  value="Honda">Honda</option>
-            <option  value="Hyundai">Hyundai</option>
-            <option  value="Jaguar">Jaguar</option>
-            <option  value="Jeep">Jeep</option>
-            <option  value="Kia">Kia</option>
-            
-        </select> 
-        <input type="submit" />   
-      </form> </div>
+     
+      <section>
+        <article> 
+      <button class="button button1">
+        <a href="feed.html">Go to Feed Page</a></button>
+      <button class="button button1">
+        <a href="#tv-shows">Tv Shows</a></button>
+      <button class="button button2">
+        <a href="#movies">Go To Movies</a></button>
+      
+      <form id="film_select">
+      <h1> genres </h1>
+      <select name="genres">
+      <option  value="Horror">Horror</option>
+      <option  value="Comedies">Comedies</option>
+      <option  value="Thrillers">Thrillers</option>
+      <option  value="Jeep">Jeep</option>
+      <option  value="Kia">Kia</option>
+      <option  value="Honda">Honda</option>
+      <option  value="Hyundai">Hyundai</option>
+      <option  value="Jaguar">Jaguar</option>
+      <option  value="Jeep">Jeep</option>
+      <option  value="Kia">Kia</option>
+      </select> 
+      <input type="submit" />   
+      </form> </section>
      
         
 <section id="movies">
@@ -823,10 +834,9 @@ Why would / wouldn’t you recommend to others?</label>
     <label>Did you enjoy this movie? Explain your Rating.
 Why would / wouldn’t you recommend to others?</label>
     <textarea name="comment" form="article-box" input type="textarea" placeholder="Start typing..."></textarea><input type="submit"></article>
-    
-
 </section>
 
-
-
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
 </html>

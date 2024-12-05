@@ -5,6 +5,36 @@
 .topnav{
   margin: -8px -21.4%;
 }
+.topnav a {
+  color: #8aa5c5;
+  
+  font-size: 17px;
+  width: 14%;
+  line-height: 20px;
+  bottom: 30px;
+  padding-left: 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+ .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+ 
+ .topnav label {
+    font-size: 16px;
+}
+ .topnav h1 {
+    font-size: 16px;
+}
+
 div.article-logo {
   margin-top:-.4vw;
   display:block ;
@@ -27,34 +57,6 @@ div.article-logo {
     vertical-align: 25px;
 display: inline-flex;
 }
-.topnav a {
-  color: #8aa5c5;
-  
-  font-size: 17px;
-  width: 14%;
-  line-height: 20px;
-  bottom: 30px;
-  padding-left: 20px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #2196F3;
-  color: white;
-}
-
-
-
- 
-  .topnav input[type=text] {
-    border: 1px solid #ccc;  
-  }
-
-
 
 #article h1 {
     text-align: center;
@@ -241,24 +243,19 @@ h1
   display:inline-flex;
 }
 
-
-
-
 textarea {
 
     height: 100px;
     width: 300px;
-    resize: none;
-  
+    resize: none; 
 }
 
 svg {
-  padding-top: 8px;
-  
+  padding-top: 8px; 
 }
+
 svg.star.hover{
   fill: gold;
-
 }
  
 #subheader-1 #add input[type="submit"]{
@@ -270,5 +267,74 @@ svg.star.hover{
   height: 10px;
 }
 
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=email], .form-container input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 0px 10px 8%;
+  border: 1px solid black;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+button#create {
+  background-color: rgb(255, 162, 0);
+  color: white;
+  display: flex;
+  border: none;
+  align-items: center;
+  justify-content: space-around;
+}
+ #login.btn.cancel {
+background-color: rgb(255, 162, 0);
+color: white;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+.form-container h1 {
+  line-height: 35px;
+  color:black;
+}
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
 
 
