@@ -1,11 +1,15 @@
 *
+.form-container h1 {
+  line-height: 35px;
+}
 
 #first-page {
   margin: 10px 12%;
      height:max-content;
  }
  .topnav{
-  margin: 8px -2.4%;
+  margin: -8px -15.8%;
+  width: 150%;
 }
 .topnav a {
   color: #8aa5c5;
@@ -49,38 +53,17 @@ nav {
 }
 header {
   font-family: "Nokora";
-  display: inline-flex;
   justify-content: space-around;
   font-size: 29px;
-  margin: -9px -80px;
 }
 
 header menu li {
   list-style: none;
 }
+.article-logo a{
+  color: #ddd;
+}
 
-header menu li a {
-  color:white;
-  font-size: 18px;
-  text-decoration: none;
-  transition: color .5s;
-}
-nav#desktop-nav{
-  margin: -9px -20.4%;
-  color: #8aa5c5; 
-  font-size: 17px;
-  line-height: 20px;
-  display: flex;
-  width: 100%;
-}
-.topnav a {
-  color: #8aa5c5;
-  
-  font-size: 17px;
-  line-height: 20px;
-  bottom: 30px;
-  padding-left: 20px;
-}
 *#perspectives h1 {
   font-family:"Nokora";
   font-style: normal;
@@ -105,23 +88,20 @@ nav#desktop-nav{
 #title h1{
   background-color: #2196F3;
 }
+
 div{
   display: block;
   unicode-bidi: isolate;
 }
 div.article-logo {
-  display:flex ;
+  margin-top:-.4vw;
+  display:block ;
   background-color:#1c2786;
-  align-items: center;
-  gap:10vw;
-  padding-right: 4.1vw;
-  padding-left: 16vw;
-}
+  }
 img#logo {
     height: 3vw;
     display: inline;
     margin-top: 1vw ;
-    margin-left: 50px;
     align-items: center;
 
   }
@@ -132,6 +112,7 @@ img#logo {
 
   a:-webkit-any-link {
     vertical-align: 25px;
+    
 }
 
 
@@ -308,27 +289,7 @@ li {
 #newsletter-subscribe button {
   background-color: #79C6D7;
 }
-#page-button a{
-  
-  border-radius: 1px;
-  color: #E5FAFF;
-  font-family: "Julius Sans One";
-  font-size: large; 
-}
-#page-button a:hover {
-  color: #333651;
-}
-#page-button :hover {
-  color: #79C6D7;
-  background-color: #E5FAFF;
-}
-#page-button button{
-  height: 80px;
-  border-radius: 60px;
-  background-color:#4B779B;
-  stroke-opacity: 10px;
-  
-}
+
 label[for="content-box"] {
   color: #1c2786;
   background-color: transparent;
@@ -353,7 +314,6 @@ body {
   padding: 16px 20px;
   border: none;
   cursor: pointer;
-  opacity: 0.8;
   position: fixed;
   bottom: 23px;
   right: 28px;
@@ -364,16 +324,28 @@ body {
 .form-popup {
   display: none;
   position: fixed;
-  bottom: 0;
+  top:0px;
   right: 15px;
+  height: 10%;
+  margin-bottom: 20%;
   border: 3px solid #f1f1f1;
-  z-index: 9;
+  z-index: 100;
+}
+@media (min-height: 431px) and (max-height:828){
+  .form-popup, .form-container {
+    height: 50%;
+  }
 }
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 300px;
   background-color: white;
+
+}
+@media (min-height:100px) and (max-height:150px){
+  .form-container{
+    height: 50%;
+  }
 }
 
 /* Full-width input fields */
@@ -400,7 +372,6 @@ body {
   cursor: pointer;
   width: 100%;
   margin-bottom:10px;
-  opacity: 0.8;
 }
 button#create {
   background-color: rgb(255, 162, 0);
@@ -421,12 +392,110 @@ justify-content: space-around;
 .form-container .cancel {
   background-color: red;
 }
-.form-container h1 {
-  line-height: 35px;
-}
+
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
-  opacity: 1;
 }
 /* Button used to open the contact form - fixed at the bottom of the page */
 
+
+#mobile-menu-button{
+  display: none;
+}
+@media (max-width: 456px) {
+  
+  #mobile-menu-button {
+    display: block;
+  }
+  
+  #main-menu {
+   
+    background-color: transparent;
+    flex-direction: column;
+    align-items: center;
+    top: 0px;
+    left: 5%;
+    width: 80%;
+    text-align: center;
+  
+      }
+  
+  .mobile-display-none {
+    display: none;
+  }
+  
+  
+  
+ #main-menu .main-nav-item {
+    color: teal;
+ background-color: bisque;
+
+  }
+  
+  #main-menu li button:hover, #main-menu li a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  #main-menu .dropdown-menu a {
+    color: white;
+  }
+  
+   
+ 
+}
+
+@media (max-width: 448px){
+ .top-nav a {
+  margin:10px 60%;
+  background-color: pink;
+ }
+}
+@media (max-width:312px){
+  #mobile-menu-button {
+    display: block;
+  }
+  .topnav a {
+    display: none;
+  }
+}
+#main-menu {
+ 
+  color: white; 
+  gap: 20px;
+  flex-direction: row;
+  transition: display 1s;
+}
+
+.menu-display-flex {
+display:flex;
+}
+
+menu li {
+  list-style: none;
+ 
+}
+
+#main-menu button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px;
+  color: white;
+
+}
+article{
+  display: block;
+}
+
+
+#main-menu a {
+  color: white;
+  text-decoration: none;
+}
+@media (max-width:880px ){
+  article header{
+letter-spacing: none; 
+ }
+}

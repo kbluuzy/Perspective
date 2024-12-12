@@ -1,4 +1,17 @@
 *
+#first-page header nav a, #second-page header nav a {
+
+}
+label[for="psw"], label[for="email"]{
+  height: 19px;
+}
+
+.form-container h1 {
+  line-height: 35px;
+}
+* {
+  box-sizing: border-box;
+} 
 #second-page {
   margin: 8px 15%;
 }
@@ -47,7 +60,7 @@ div.article-logo {
     margin-left: 50px;
     align-items: center;
   }
-  div.article-tex {
+  div.article-text {
     display: inline;
     text-align: center;
   }
@@ -108,6 +121,25 @@ section .subhead {
     align-content: center;
    
   }
+  div section #movies{
+    width: 70%;
+  }
+  @media (max-width:921px){
+   div section #movies {
+      width: 80%;
+    }
+  }
+  @media (max-width:880px){
+    article header {
+      letter-spacing: 0px;
+margin:none;
+    }
+  }
+  @media (min-width: 680px) and (max-width: 850px){
+    article header {
+      letter-spacing: 0px;
+    }
+    }
 .add, .subheader-1, .subheader-2, .subheader-3, .subheader-4 { 
   grid-column: span 3; /* Make the header and subheaders span across all columns */
    /* Add a border around the spanning elements */
@@ -183,10 +215,8 @@ textarea .article-box {
     resize: none;
   }
 input[type="textarea"]{
-  height: 95px;
-  width: 800px;
-  align-content: center;
-  position: relative;
+  padding: 10px 2%;
+  margin-bottom: 6px;
 
  }
 
@@ -337,4 +367,9 @@ justify-content: space-around;
   opacity: 1;
 }
 
-
+@media (max-midth:312px ){
+  #second-page {
+    margin: -90%;
+    
+  }
+}
