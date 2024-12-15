@@ -1,18 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <nav>
-        <a href="index.html">Go to Perspectives Homepage <b>(Page.1)</b></a>
-    </nav>
-<head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Profile</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nokora:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="assets/styles/styles.css" > 
-</head>
+    
+<title>Your Profile</title>
+    <head> 
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nokora:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="assets/styles/profile.css" > 
+    </head>
+
+
 <body id="third-page">
+    <header>
+        <section>
+        <article> 
+    <nav id="desktop-nav-3">
+            <div class="topnav-3">
+                    
+              <div class="article-logo-3">
+                        
+             <img id="logo" src="assets/images/logo.png" alt="logo">
+    
+    
+    <a href="index.html">Home</a>
+     <a href="#" onclick="openForm()">Create Account</a>
+                <div class="form-popup" id="myForm">
+                 <form action="" class="form-container">
+                 
+                 <h1>Create Account</h1>
+                 <label for="email">Email:</label>
+                 <input type="email" id="email" name="email" required>
+                 <label for="psw">Password:
+                 </label>
+                 <input type="password" id="password" name="psw" required>
+                 
+                 <button type="submit" id="create">Create Account</button>
+                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+               
+               
+                 <h1>Login</h1>
+                 <label for="email">Email:</label>
+                 <input type="email" id="email" name="email" required>
+                 <label for="psw">Password:
+                 </label>
+                 <input type="password" id="password" name="psw" required> 
+               
+                 <button type="submit" class="btn cancel" id="login" onclick="closeForm()">Login</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                 </form>                    
+                </div>
+     <a href="#contact">Contact</a>
+     <a href="Explore.html">Explore</a>
+     <a href="Profile.html">Your Profile</a>                              
+         </section>
+    </nav>
+   </header>  
+
+<main>
     <h1> Your Profile</h1>
     <p>
         <label for="name">Name</label> 
@@ -43,7 +90,9 @@
 
   <div id="image-preview">
     </div>
+</main>
     
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
