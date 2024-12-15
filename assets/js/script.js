@@ -32,3 +32,32 @@ $("#mobile-menu-button").click(function(){
         mobileMenuOpen = false; 
     }
 });
+function upload() {
+    const fileUploadInput = document.querySelector('.file-uploader');
+  
+    // Check if a file was selected
+    if (!fileUploadInput.files.length) {
+      return alert('Please select an image to upload');
+    }
+  
+    const image = fileUploadInput.files[0];
+  
+    // Check if the file is an image
+    if (!image.type.includes('image')) {
+      return alert('Only images are allowed!');
+    }
+  
+    // Check if file size exceeds 10 MB
+    if (image.size > 10_000_000) {
+      return alert('Maximum upload size is 10MB!');
+    }
+  
+    const fileReader = new FileReader();
+  
+    fileReader.onload = (fileReaderEvent) => {
+      const profilePicture = document.querySelector('.profile-picture');
+      profilePicture.style.backgroundImage = `url(${fileReaderEvent.target.result})`; // Template literal for cleaner string construction
+    };
+  
+    fileReader.readAsDataURL(image);
+  }

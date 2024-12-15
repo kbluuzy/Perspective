@@ -2,6 +2,23 @@
 #first-page header nav a, #second-page header nav a {
 
 }
+label[for="myCheck1"], label[for="myCheck2"]{
+  color:#111;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  border-radius: 5px; /* Optional: Rounded corners for the image */
+  
+}
+input[type="checkbox" i]{
+  color:black;
+  width: 65px;
+  margin: 12px 12px 3px 4px;
+
+}
+.checkbox-container{
+  display: flex;
+}
 label[for="psw"], label[for="email"]{
   height: 19px;
 }

@@ -10,6 +10,7 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nokora:wght@100;300;400;700;900&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="assets/styles/profile.css" > 
+     <script src="https://use.fontawesome.com/fe459689b4.js"></script>
     </head>
 
 
@@ -60,6 +61,35 @@
    </header>  
 
 <main>
+    <div class="content-box">
+        <label for="textbox1">Your Profile Picture:</label>
+        <p>Show a file-select field which allows a file to be chosen for upload:</p>
+
+    <div class="profile-picture">
+        <h1 class="upload-icon">
+          <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+        </h1>
+        <input
+          class="file-uploader"
+          type="file"
+          onchange="upload()"
+          accept="image/*"
+        />
+      </div>
+
+<form method="post" enctype="multipart/form-data">
+    <div>
+      
+      <button
+ type="submit">Submit</button>
+    </div>
+  </form>
+
+  <div id="image-preview">
+    </div>      
+        <label for="textbox2">Username:</label>
+        <input type="text" placeholder="Start typing.."  id="textbox2" name="textbox2"> 
+
     <h1> Your Profile</h1>
     <p>
         <label for="name">Name</label> 
@@ -70,29 +100,12 @@
  <section>
   
  </section>   
-    <p>Show a file-select field which allows a file to be chosen for upload:</p>
-
-
-
-<form method="post" enctype="multipart/form-data">
-    <div>
-      <label for="profile_pic">Choose file to upload</label>
-      <input
-        type="file"
-        id="profile_pic"
-        name="profile_pic"
-        accept=".jpg, .jpeg, .png" />
     
-      <button
- type="submit">Submit</button>
-    </div>
-  </form>
-
-  <div id="image-preview">
-    </div>
 </main>
     
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
+    <script src="./scripts.js"></script>
+
 </body>
 </html>
