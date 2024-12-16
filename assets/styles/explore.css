@@ -1,6 +1,6 @@
 *
-#first-page header nav a, #second-page header nav a {
-
+ #second-page header nav a {
+padding:50px;
 }
 label[for="myCheck1"], label[for="myCheck2"]{
   color:#111;

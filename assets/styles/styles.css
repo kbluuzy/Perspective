@@ -11,14 +11,14 @@
   margin: -8px -15.8%;
   width: 150%;
 }
-.topnav a {
+#first-page header nav a{
   color: #8aa5c5;
   
   font-size: 17px;
   width: 14%;
   line-height: 20px;
   bottom: 30px;
-  padding-left: 20px;
+  padding: 50px;
 }
 
 .topnav a:hover {

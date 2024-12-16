@@ -1,4 +1,13 @@
-*
+*#third-page header nav a{
+  color: #8aa5c5;
+  
+  font-size: 17px;
+  width: 14%;
+  line-height: 20px;
+  bottom: 30px;
+  padding: 50px;
+}
+
 #third-page {
     margin: 10px 12%;
        height:max-content;
@@ -268,6 +277,7 @@ input[type="textarea"]{
   }
   .container {
     display: flex;
+    justify-content: space-between;
   }
   
   .column {
