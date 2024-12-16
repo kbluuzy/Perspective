@@ -29,12 +29,12 @@ padding:50px;
 
 
 label[for="myCheck1"], label[for="myCheck2"]{
-  color:#111;
+  color:white;
   display: flex;
   align-items: center;
   margin-right: 10px;
   border-radius: 5px; /* Optional: Rounded corners for the image */
-  
+  font-size:14px;
 }
 input[type="checkbox" i]{
   color:black;
@@ -44,6 +44,7 @@ input[type="checkbox" i]{
 }
 .checkbox-container{
   display: flex;
+  width:22vw;
 }
 label[for="psw"], label[for="email"]{
   height: 19px;
@@ -144,7 +145,9 @@ div.article-logo {
     border: none;
     padding-left: 10px;
   }
-
+  .article-box label[for="myCheck1"], label[for="myCheck2"]{
+    font-size: 20px;
+  }
 .article-box label {
     font-size: 20px;
   }
@@ -274,6 +277,7 @@ input[type="submit-text"] {
   cursor: pointer;
   
 }
+input[type=""]
 .add input[type="textarea"]{
   border: 1px solid black;
   border-width: 5px;
@@ -433,4 +437,34 @@ justify-content: space-around;
    #second-page header nav a {
 padding: 3vw;
   }
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
 }

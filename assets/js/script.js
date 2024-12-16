@@ -83,3 +83,11 @@ checkSection();
 // Add event listeners to sections if needed to trigger the checkSection function on section change
 tvSection.addEventListener('click', checkSection);
 moviesSection.addEventListener('click', checkSection);
+
+function redirectToLink() {
+  // Prevent default form submission
+  event.preventDefault();
+
+  // Redirect to the desired URL
+  window.location.href = "#tv-shows"; // Replace with your desired URL
+}
