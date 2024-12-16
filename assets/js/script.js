@@ -61,3 +61,25 @@ function upload() {
   
     fileReader.readAsDataURL(image);
   }
+
+  const tvSection = document.getElementById('tv-shows');
+const moviesSection = document.getElementById('movies');
+const tvButton = document.querySelector('.tv');
+const movieButton = document.querySelector('.movie');
+
+function checkSection() {
+  if (tvSection.classList.contains('active')) {
+    tvButton.style.display = 'none';
+    movieButton.style.display = 'block';
+  } else if (moviesSection.classList.contains('active')) {
+    tvButton.style.display = 'block';
+    movieButton.style.display = 'none';
+  }
+}
+
+// Call the checkSection function initially and on any section change
+checkSection();
+
+// Add event listeners to sections if needed to trigger the checkSection function on section change
+tvSection.addEventListener('click', checkSection);
+moviesSection.addEventListener('click', checkSection);

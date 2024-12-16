@@ -2,6 +2,32 @@
  #second-page header nav a {
 padding:50px;
 }
+#go {
+  margin-left: -160px;
+  display: block;
+  position: fixed;
+  margin-top:28%;
+  width: 174px;
+  line-height: 40px;
+}
+
+#go .tv , #go .movie{
+  height: 100px;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  width:100px;
+  background-color: #a5e6f5;
+}
+#go a {
+  text-decoration: none;
+  color:#1c2786;
+  text-align: center;
+}
+
+
 label[for="myCheck1"], label[for="myCheck2"]{
   color:#111;
   display: flex;
@@ -108,7 +134,10 @@ div.article-logo {
     align-items: center;
     
   }
-  
+  #tv-shows section .subhead{
+    border: 3px solid white;
+
+  }
 #article img {
     width: 50%;
     height: auto 200px; 
@@ -161,7 +190,8 @@ margin:none;
    /* Add a border around the spanning elements */
   display: flex; /* Allow the content to wrap to the next line if needed */
   align-items:normal; /* Center the content vertically */
-  
+  height:100px;
+  margin:20px;
 }
 section .mlists {
   grid-column: span 3;
@@ -383,9 +413,24 @@ justify-content: space-around;
   opacity: 1;
 }
 
-@media (max-midth:312px ){
+@media (max-width:312px ){
   #second-page {
     margin: -90%;
     
+  }
+}
+@media (max-width: 880px){
+  #article header{
+    letter-spacing: 0px;
+  }
+}
+@media (max-width:680px){
+  #article header {
+    font-size: 40px;
+  }
+}
+@media (max-width:1124px){
+   #second-page header nav a {
+padding: 3vw;
   }
 }
