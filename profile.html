@@ -61,10 +61,13 @@
    </header>  
 
 <main>
-    <div class="content-box">
-        <label for="textbox1">Your Profile Picture:</label>
-        <p>Show a file-select field which allows a file to be chosen for upload:</p>
-
+    <section id="profile">
+    <label>Your Profile Page</label>
+    <div class="content-box1">
+        <h1> Your Profile</h1>
+        
+            <div class="container">
+    <div class="column1">
     <div class="profile-picture">
         <h1 class="upload-icon">
           <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
@@ -75,31 +78,71 @@
           onchange="upload()"
           accept="image/*"
         />
-      </div>
-
-<form method="post" enctype="multipart/form-data">
-    <div>
-      
-      <button
+<form method="post" enctype="multipart/form-data">  
+</div><button
  type="submit">Submit</button>
-    </div>
+     </div>
   </form>
-
-  <div id="image-preview">
-    </div>      
+  
+    <div class="container">   
+        <div class="column1">
         <label for="textbox2">Username:</label>
         <input type="text" placeholder="Start typing.."  id="textbox2" name="textbox2"> 
+    </div></div>
+</section>
 
-    <h1> Your Profile</h1>
-    <p>
-        <label for="name">Name</label> 
-        <br>
-        <input type="text" id="name" name="name" required minlength="10" maxlength="19" size="18" />
-        <button type="submit">Submit</button>
-    </p>
- <section>
-  
- </section>   
+
+
+<section id="saved1">
+    <div class="content-box">
+        <h1> Your Profile Favorites</h1>
+        
+            <div class="container">
+    <div class="column">
+  </div>
+    
+
+    <div class="container">   
+        <div class="column">
+        <label><b>Movies:</b></label>
+          </div></div>
+            <div class="container">
+    <div class="column">
+        <label><b>TV-Shows:</b></label>
+    </div>
+    <button
+ type="submit">Submit</button>
+     </div>
+    
+</section>
+
+<section id="saved2">
+    <div class="content-box">
+        <h1> Your Watch Later List
+        </h1> <div class="container">
+            <div class="column">
+          </div>
+            
+        <p>
+             </p>
+            <div class="container">
+    <div class="column">
+        <label><b>Movies:</b></label>
+    </div></div>
+      <div class="container">
+<div class="column">
+  <label><b>TV-Shows:</b></label>
+</div>
+<button
+type="submit">Submit</button>
+</div>
+    
+</section>
+    
+   <section>
+    
+   </section>
+
     
 </main>
     
