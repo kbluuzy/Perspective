@@ -451,7 +451,7 @@ justify-content: space-around;
   background-color: pink;
  }
 }
-@media (max-width:312px){
+@media (max-width:500px){
   #mobile-menu-button {
     display: block;
   }
