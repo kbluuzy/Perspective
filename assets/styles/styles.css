@@ -445,7 +445,7 @@ justify-content: space-around;
  
 }
 
-@media (max-width: 448px){
+@media (max-width: 508px){
  .top-nav a {
   margin:10px 60%;
   background-color: pink;
