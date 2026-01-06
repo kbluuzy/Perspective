@@ -407,7 +407,12 @@ justify-content: space-around;
   #mobile-menu-button {
     display: block;
   }
-  
+  .responsive-16-9 {
+  width: 100%;            /* scales with parent */
+  aspect-ratio: 16 / 9;
+  max-width: 800px;       /* optional cap */
+  overflow: hidden;
+}
   #main-menu {
    
     background-color: transparent;
