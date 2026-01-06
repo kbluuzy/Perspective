@@ -241,7 +241,7 @@ section .mlists {
   font-size: clamp(1.6rem, 3.5vw, 2.5rem); /* fluid, min 1.6rem max 2.5rem */
   font-family: Nokora;
   color: #fff;
-  /*-webkit-text-stroke: calc(1px + 0.05vw) #0876b2; /* stroke scales slightly */
+  -webkit-text-stroke: calc(1px + 0.05vw) #0876b2; /* stroke scales slightly */
   font-weight: 700;
   padding: 0 5vw; /* responsive horizontal padding */
   text-align: left;
