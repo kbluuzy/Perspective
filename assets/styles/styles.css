@@ -101,6 +101,7 @@ div.article-logo {
 img#logo {
     height: 3vw;
     display: inline;
+    margin-left: 3vw;
     margin-top: 1vw ;
     align-items: center;
 
