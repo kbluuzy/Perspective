@@ -25,6 +25,13 @@ button {
     background-image: linear-gradient(to bottom right, #79C6D7,#74A1C7,#619DB7,#79C6D7);
 
    }
+   img#me {
+    height: 3vw;
+    display: inline;
+    margin-top: 1vw ;
+    align-items: center;
+  
+   }
 
    img#logo {
     height: 3vw;
