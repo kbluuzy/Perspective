@@ -1,5 +1,5 @@
 *
-#third-page header nav a{
+header nav a{
   color: #8aa5c5;
   font-size: 17px;
   width: 14%;
@@ -11,10 +11,6 @@
   height:fit-content;
   background-color: rgb(170, 204, 236); /* For browsers that do not support gradients */
   background-image: linear-gradient(to bottom right, #688EBA, #79BFD4);
-}
-button {
-  height:20px;
-  margin-top:20px;
 }
 #third-page {
     margin: 8px 15%;
