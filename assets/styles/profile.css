@@ -7,6 +7,21 @@ header nav a{
   bottom: 30px;
   padding: 50px;
 }
+#article header {
+    grid-column: span 3;
+    font-weight: 100;
+    stroke:  #79c6d7;
+    color: #79c6d7;
+    text-align: center;
+    font-family: Julius Sans One;
+    font-size: 60px;
+    font-style: normal;
+    height: 70px;
+    background-color: #ffffff;
+    letter-spacing: 10px;
+    align-content: center;
+   
+  }
 #grad1 {
   height:fit-content;
   background-color: rgb(170, 204, 236); /* For browsers that do not support gradients */

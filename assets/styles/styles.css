@@ -126,14 +126,14 @@ body {
 padding-top: 1px;
 }
  
- #film {
+ img#film {
   float:right;
   width: 44%;
   margin: 5px 8vw; 
   position: relative;
   top: -50px;
   right: -100px;
-  
+  scale: 50%;
 
 }
 #perspective.idea {
