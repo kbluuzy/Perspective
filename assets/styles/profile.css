@@ -42,6 +42,14 @@ header nav a{
     margin-top: 1vw ;
     align-items: center;
    }
+   img#resume{
+    display: inline;
+    margin-top: 1vw ;
+    align-items: center;
+    scale: 100%;
+    inline-size: -webkit-fill-available;
+   }
+   
 
    img#logo {
     height: 3vw;
@@ -80,7 +88,6 @@ line-height:20px;
     border-radius: 40px;
     margin: 20px 50px 4%;
     text-align:center;
-    width: 50vw;
 }
   
   .content-box label {

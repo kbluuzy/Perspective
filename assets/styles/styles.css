@@ -7,6 +7,15 @@
   padding:50px;
 
 }
+img#contactpic {
+   float:right;
+  width: 44%;
+  margin: 5px 8vw; 
+  position: relative;
+  top: -50px;
+  right: -100px;
+  scale: 50%;
+}
 .topnav a {
   color: #8aa5c5;
   font-size: 17px;
@@ -17,7 +26,6 @@
 }
  .topnav{
   margin: -8px -21.4%;
-  width: 150%;
 }
 
 .topnav a:hover {
@@ -32,14 +40,6 @@
     font-size: 16px;
 }
 
-
-
-
-header {
-  font-family: "Nokora";
-  justify-content: space-around;
-  font-size: 29px;
-}
 
 header menu li {
   list-style: none;
@@ -127,14 +127,7 @@ padding-top: 1px;
 }
  
  img#film {
-  float:right;
-  width: 44%;
-  margin: 5px 8vw; 
-  position: relative;
-  top: -50px;
-  right: -100px;
-  scale: 50%;
-
+  
 }
 #perspective.idea {
   background-color: none;
