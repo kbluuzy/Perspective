@@ -91,3 +91,14 @@ function redirectToLink() {
   // Redirect to the desired URL
   window.location.href = "#tv-shows"; // Replace with your desired URL
 }
+function openAboutBox(element) {
+    // Finds the hidden popup right next to the clicked "About" link and displays it
+    const popup = element.nextElementSibling;
+    popup.style.display = "flex";
+}
+
+function closeAboutBox(element) {
+    // Finds the parent popup and hides it when "Close" is clicked
+    const popup = element.closest(".about-popup");
+    popup.style.display = "none";
+}

@@ -134,9 +134,7 @@ div.article-logo {
     border: none;
     padding-left: 10px;
   }
-  .article-box label[for="myCheck1"], label[for="myCheck2"]{
-    font-size: 20px;
-  }
+ 
 .article-box label {
     font-size: 20px;
   }
@@ -441,4 +439,102 @@ form.example::after {
   content: "";
   clear: both;
   display: table;
+}
+/* Style the clickable "About" text inside your article */
+.about-trigger {
+    color: #E5FAFF;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 5px;
+    transition: color 0.3s ease;
+}
+
+.about-trigger:hover {
+    color: #ffffff;
+}
+
+/* Initially hide the description pop-up overlay */
+.about-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Darkens background */
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The white box container for the description text */
+/* Main popup container: stacks the heading on top of the image/text row */
+.about-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 900px;
+    width: 90%;
+    display: flex;
+    flex-direction: column; /* Stacks children vertically: Heading on top, row underneath */
+    gap: 20px;              /* Space between heading and the image/text row */
+    text-align: left;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Full-width heading style */
+.about-content > h3 {
+    color: #1c2786;
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;     /* Centers the title at the top, or remove if you want left-aligned */
+}
+
+/* Row wrapper that forces the image and text to sit side-by-side */
+.about-row {
+    display: flex;
+    gap: 30px;
+    align-items: center;    /* Vertically centers the image and text block */
+}
+
+/* Image takes up half the row */
+.about-row img {
+    width: 50%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Text side takes up the other half */
+.about-text-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;              /* Space between paragraph and close button */
+}
+
+.about-text-side p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Close button style */
+.close-about-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    align-self: flex-start;
+}
+
+.close-about-btn:hover {
+    opacity: 0.8;
 }
