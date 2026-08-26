@@ -102,3 +102,6 @@ function closeAboutBox(element) {
     const popup = element.closest(".about-popup");
     popup.style.display = "none";
 }
+// This changes the visible URL path/state without a full page reload
+const newUrl = window.location.pathname; // leaves just "/Explore.html"
+window.history.pushState({path: newUrl}, '', newUrl);
